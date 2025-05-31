@@ -8,6 +8,6 @@
     </p>
 
     <div class="relative mt-10">
-        <a href="" class="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white rounded-md">Masuk ke Layanan Pengajuan</a>
+        <a href="{{ env('APP_DASHBOARD_URL') . '/login' }}" target="_blank" class="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white rounded-md">Masuk ke Layanan Pengajuan</a>
     </div>
 </div><!--end grid-->

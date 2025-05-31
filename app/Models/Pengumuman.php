@@ -21,6 +21,11 @@ class Pengumuman extends Model
         'tanggal_kadaluwarsa',
     ];
 
+    protected $casts = [
+        'tanggal_publish' => 'datetime',
+        'tanggal_kadaluwarsa' => 'datetime',
+    ];
+
     public function admin()
     {
         return $this->belongsTo(Admin::class, 'dibuat_oleh');
@@ -28,10 +33,6 @@ class Pengumuman extends Model
 
     public function scopePublished($query)
     {
-        return $query->where('status', 'published')
-                     ->where(function ($q) {
-                         $q->whereNull('tanggal_publish')
-                           ->orWhere('tanggal_publish', '<=', now());
-                     });
+        return $query->where('status', 'published');
     }
 }

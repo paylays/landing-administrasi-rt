@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Landing - Website Administrasi RT.36</title>
         <!-- favicon -->
-        <link href="{{ asset('assets/images/favcoicon.i') }}" rel="shortcut icon">
+        <link href="{{ asset('favicon.ico') }}" rel="shortcut icon">
 
         <!-- Css -->
         <link href="{{ asset('assets/libs/tobii/css/tobii.min.css') }}" rel="stylesheet">

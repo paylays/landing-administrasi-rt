@@ -12,7 +12,7 @@
             <!-- Navbar Button -->
             <ul class="list-none menu-social mb-0">
                 <li class="inline">
-                    <a href="">
+                    <a href="{{ env('APP_DASHBOARD_URL') . '/login' }}" target="_blank">
                         <span class="login-btn-primary"><span class="btn rounded-md h-11 bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white">Login</span></span>
                         <span class="login-btn-light"><span class="btn rounded-md h-11 bg-gray-50 hover:bg-gray-200 text-slate-900 dark:text-white dark:bg-slate-900 dark:hover:bg-gray-700 hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700">Login</span></span>
                     </a>

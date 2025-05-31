@@ -19,7 +19,7 @@
             </h3>
 
             <ul class="list-none mt-6">
-                <li class="inline-block text-white/50 mx-5"> <span class="text-white block">Tanggan Publish :</span> <span class="block">{{ $pengumuman->tanggal_publish ?? 'Tidak diketahui'}}</span></li>
+                <li class="inline-block text-white/50 mx-5"> <span class="text-white block">Tanggan Publish :</span> <span class="block">{{ $pengumuman->tanggal_publish ? $pengumuman->tanggal_publish->translatedFormat('d F Y H:i') : 'Tidak diketahui'}}</span></li>
                 <li class="inline-block text-white/50 mx-5"> <span class="text-white block">Penulis :</span> <span class="block">{{ $pengumuman->admin->name ?? 'Tidak diketahui' }}</span></li>
             </ul>
         </div><!--end grid-->
