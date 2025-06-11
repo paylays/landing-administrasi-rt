@@ -7,8 +7,9 @@
 
 @include('includes.navbar')
 
-<section class="py-36 md:h-screen h-auto items-center flex relative" id="beranda" style="background-image: url('{{ asset('assets/images/hero/hero-rt.jpeg') }}');">
-    <div class="absolute inset-0 bg-slate-900/90"></div>
+<section class="py-36 md:h-screen h-auto items-center flex relative" id="beranda" 
+    style="background-image: url('{{ asset('assets/images/hero/hero-rt.jpeg') }}'); background-size: cover; background-position: center;">
+    <div class="absolute inset-0 bg-slate-900 opacity-90"></div>
     <div class="container relative">
         <div class="grid grid-cols-1">
             <h4 class="text-white lg:text-5xl text-4xl lg:leading-normal leading-normal font-medium mb-7 position-relative">Selamat Datang di Website RT 36 <br>Kelurahan Gunung Samarinda <br><span class="typewrite relative text-type-element" data-period="2000" data-type='[ "Kecamatan", "Balikpapan", "Selatan", "76125" ]'></span></h4>
@@ -37,7 +38,7 @@
 
 <!-- Start -->
 <section class="py-24 w-full table relative bg-center bg-cover" style="background-image: url('{{ asset('assets/images/cta/cta-rt.jpeg') }}');">
-    <div class="absolute inset-0 bg-slate-900/80"></div>
+    <div class="absolute inset-0 bg-slate-900 opacity-90"></div>
     <div class="container relative">
         
         <!-- includes/Index/cta.blade.php -->
